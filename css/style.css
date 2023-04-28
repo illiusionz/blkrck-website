@@ -419,7 +419,8 @@ video {
   row-gap: 1rem; }
   @media only screen and (max-width: 37.5em) {
     .nav {
-      margin-top: 10rem; } }
+      margin-top: 8rem;
+      row-gap: 2rem; } }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
     color: #fff;

@@ -28,7 +28,9 @@
     row-gap: 1rem;
 
     @media only screen and (max-width: $bp-small) {
-        margin-top: 10rem;
+        margin-top: 8rem;
+         row-gap: 2rem;
+
     }
 
 
