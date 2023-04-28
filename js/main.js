@@ -8,7 +8,7 @@ ScrollTrigger.normalizeScroll(true);
 const smoother = ScrollSmoother.create({
     smooth: 2,
     effects: true,
-    smoothTouch: 0.1
+    smoothTouch: 0
 });
 
 // Scroll to the spot where .box-c is in the center
