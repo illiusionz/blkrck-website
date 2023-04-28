@@ -105,12 +105,12 @@ body {
 .section1 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 7vw);
+  grid-template-rows: repeat(4, 6vw);
   grid-column: full-start / full-end;
   padding-bottom: 5rem;
   background: #efede2;
   position: relative;
-  grid-gap: 2rem 0;
+  grid-gap: 1rem 0;
   color: #161819; }
   @media only screen and (max-width: 62.5em) {
     .section1 {
@@ -184,7 +184,11 @@ body {
     transition: opacity 0.6s ease, transform 0.6s ease;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .section2 .logo {
+        width: 80%; } }
     .section2 .logo img {
       max-width: 100%;
       height: auto; }
@@ -386,7 +390,7 @@ video {
 .footer {
   background-color: #161819;
   grid-column: full-start / full-end;
-  padding: 8rem; }
+  padding: 3rem 8rem 8rem; }
   .footer h1 {
     font-size: 5.4rem;
     color: #ffffff;

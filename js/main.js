@@ -18,7 +18,10 @@ document.querySelector(".header-arrow").addEventListener("click", () => {
 
 // Animate logos in section 2
 const section2 = document.querySelector('.section2');
-const logos = section2.querySelectorAll('.logo');
+const logos = document.querySelectorAll('.logo');
+
+const section1 = document.querySelector('.section1');
+const section1Copy = section1.querySelectorAll('.section1__copy');
 
 logos.forEach((logo) => {
     gsap.set(logo, {
@@ -32,6 +35,27 @@ logos.forEach((logo) => {
         },
     });
     tl.to(logos, {
+        opacity: 1,
+        y: 0,
+        duration: .1,
+        ease: 'expoOut',
+        stagger: .05
+    });
+});
+
+
+section1Copy.forEach((copy) => {
+    gsap.set(copy, {
+        opacity: 0,
+        y: 200
+    });
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: section1,
+            start: 'top 80%'
+        },
+    });
+    tl.to(section1Copy, {
         opacity: 1,
         y: 0,
         duration: .1,

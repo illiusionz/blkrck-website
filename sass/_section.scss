@@ -1,12 +1,12 @@
 .section1 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 7vw);
+    grid-template-rows: repeat(4, 6vw);
     grid-column: full-start / full-end;
     padding-bottom: 5rem;
     background:$color-grey-light-1;
     position: relative;
-    grid-gap: 2rem 0;
+    grid-gap: 1rem 0;
     color: #161819;
 
     @media only screen and (max-width: $bp-large) {
@@ -99,6 +99,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50%;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 80%;
+
+        }
 
         img {
             max-width: 100%;
