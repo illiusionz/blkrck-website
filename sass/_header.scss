@@ -3,9 +3,8 @@
     height:100vh;
     position: relative;
 
-    @media only screen and (max-width: $bp-small) {
-      height:45vh;
-
+    @media only screen and (max-width: $bp-largest) {
+      height: 60vw;
     }
    
     &__background {
@@ -31,6 +30,8 @@
         transform: rotate(45deg);
         transition: border-width 15ms ease-in-out;
 
+      
+
     }
 
     .arrow {
@@ -39,11 +40,17 @@
       left: 50%;
       position: absolute;
       bottom: 0;
-      transform: translateX(-50%) translateY(20%) rotate(90deg);
+      transform: translateX(-50%) translateY(-10%) rotate(90deg);
       transition: transform .1s;
       width: 30px;
       animation: pulse 1s ease-in-out infinite;
       $transition-time: .15s;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 25px;
+        transform: translateX(-50%) translateY(10%) rotate(90deg);
+        height: 100px;
+      }
     
     &-top,
     &-bottom {
@@ -118,3 +125,24 @@
   }
 
 
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    @media only screen and (max-width: $bp-largest) {
+      height: auto;
+    }
+  }
+
+
+    
