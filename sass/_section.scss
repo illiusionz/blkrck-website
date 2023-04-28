@@ -12,6 +12,10 @@
         padding: 5rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 7.246376811594203VW;
+    }
+
     &__copy1 {
         grid-column: 2 / span 3;
         grid-row: 2 / span 2;
@@ -77,6 +81,12 @@
         grid-gap: 5rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        grid-gap: 4.5rem;
+        padding: 3.5rem;
+    }
+    
+ 
     .logo {
         opacity: 0;
         transform: translateY(100px);
@@ -125,12 +135,17 @@
 
          @media only screen and (max-width: $bp-small) {
             width:100%;
+            padding: 8.454106280193237VW;
          }
     
     }
 
     .col-copy {
         font-size: 1.6rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.864734299516908VW;
+        }
 
         &:after {
             content: "";
@@ -148,12 +163,24 @@
         font-size: 1.4rem;
         font-weight: 500;
         margin-bottom: 0.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.3816425120772946VW;
+            margin-bottom: 0.12077294685990338VW;
+
+        }
     }
 
     .col-title {
         display: block;
         font-size: 1.2rem;
         margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.898550724637681VW;
+            margin-bottom: 0.24154589371980675VW;
+
+        }
 
     }
 }
@@ -184,6 +211,7 @@
   .swiper-pagination {
     display: block;
     position: relative!important;
+    margin-top: 3rem;
   }
   /* Styles for the pagination bullets */
   .swiper-pagination-bullet {

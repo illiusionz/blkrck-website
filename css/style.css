@@ -114,6 +114,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .section1 {
       padding: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section1 {
+      padding: 7.246376811594203VW; } }
   .section1__copy1 {
     grid-column: 2 / span 3;
     grid-row: 2 / span 2;
@@ -166,6 +169,10 @@ body {
   @media only screen and (max-width: 62.5em) {
     .section2 {
       grid-gap: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section2 {
+      grid-gap: 4.5rem;
+      padding: 3.5rem; } }
   .section2 .logo {
     opacity: 0;
     transform: translateY(100px);
@@ -205,9 +212,13 @@ body {
         width: 90%; } }
     @media only screen and (max-width: 37.5em) {
       .section3 .col-box {
-        width: 100%; } }
+        width: 100%;
+        padding: 8.454106280193237VW; } }
   .section3 .col-copy {
     font-size: 1.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section3 .col-copy {
+        font-size: 3.864734299516908VW; } }
     .section3 .col-copy:after {
       content: "";
       display: block;
@@ -220,10 +231,18 @@ body {
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 0.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section3 .col-name {
+        font-size: 3.3816425120772946VW;
+        margin-bottom: 0.12077294685990338VW; } }
   .section3 .col-title {
     display: block;
     font-size: 1.2rem;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section3 .col-title {
+        font-size: 2.898550724637681VW;
+        margin-bottom: 0.24154589371980675VW; } }
 
 .section3-mobile {
   display: none; }
@@ -247,7 +266,8 @@ body {
     box-sizing: border-box; }
   .swiper-pagination {
     display: block;
-    position: relative !important; }
+    position: relative !important;
+    margin-top: 3rem; }
   /* Styles for the pagination bullets */
   .swiper-pagination-bullet {
     background-color: #fff;
