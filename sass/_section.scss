@@ -75,6 +75,8 @@
     align-items: center;
     max-width: 1280px;
     margin: auto;
+    background:#efede2;
+
 
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: repeat(3, 1fr);
@@ -124,7 +126,7 @@
     align-items: center;
     max-width: 1280px;
     margin: 8rem auto;
-    
+    background:#efede2;
     @media only screen and (max-width: $bp-small) {
         width:90%;
         display: flex;
