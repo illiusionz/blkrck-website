@@ -128,7 +128,7 @@
     margin: 8rem auto;
     background:#efede2;
     @media only screen and (max-width: $bp-small) {
-        width:90%;
+        width:100%;
         display: flex;
      }
     .col-box {
@@ -214,7 +214,8 @@
     .section3-desktop {display: none;}
     .section3-mobile {
         display: block;
-        margin: 3rem auto;
+        margin:0;
+        padding:30px 0;
     }
 
      /* Styles for the Swiper slider */
@@ -223,6 +224,9 @@
     height: auto;
     margin: auto;
     overflow: hidden;
+    @media only screen and (max-width: $bp-small) {
+        width:90%;
+     }
   }
 
   .swiper-wrapper {
@@ -232,7 +236,7 @@
   .swiper-pagination {
     display: block;
     position: relative!important;
-    margin-top: 3rem;
+    margin: 5rem auto;
   }
   /* Styles for the pagination bullets */
   .swiper-pagination-bullet {
