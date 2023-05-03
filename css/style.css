@@ -298,7 +298,7 @@ img {
     background-color: #fff;
     opacity: 0.5; }
   .swiper-pagination-bullet {
-    border: 10px solid #000; }
+    border: 5px solid #000; }
   .swiper-pagination-bullet-active {
     opacity: 1; } }
 
@@ -341,7 +341,8 @@ img {
       .header .arrow {
         width: 25px;
         transform: translateX(-50%) translateY(10%) rotate(90deg);
-        height: 100px; } }
+        height: 100px;
+        display: none; } }
     .header .arrow-top, .header .arrow-bottom {
       background-color: #fff;
       height: 4px;
@@ -400,6 +401,20 @@ video {
   @media only screen and (max-width: 75em) {
     video {
       height: auto; } }
+
+#loadingIcon {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  color: #ffff; }
 
 .footer {
   background-color: #161819;

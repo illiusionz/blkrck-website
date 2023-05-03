@@ -6,7 +6,7 @@ ScrollTrigger.normalizeScroll(true);
 
 // Create a smooth scroller
 const smoother = ScrollSmoother.create({
-    smooth: 2,
+    smooth: 1.5,
     effects: true
 });
 
@@ -69,3 +69,20 @@ var swiper = new Swiper('.swiper-container', {
       clickable: true,
     },
   });
+
+
+
+
+  const video = document.getElementById("myVideo");
+  const loadingIcon = document.getElementById("loadingIcon");
+  
+  // Show the loading icon when the video starts buffering
+  video.addEventListener("waiting", () => {
+    loadingIcon.style.display = "flex";
+  });
+  
+  // Hide the loading icon when the video starts playing
+  video.addEventListener("playing", () => {
+    loadingIcon.style.display = "none";
+  });
+  
