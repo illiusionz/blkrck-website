@@ -403,7 +403,7 @@ video {
       height: auto; } }
 
 #loadingIcon {
-  display: flex;
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
