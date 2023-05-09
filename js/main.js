@@ -1,4 +1,6 @@
 // Import plugins
+window.scrollTo(0, 0);
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // Normalize scrolling behavior
@@ -21,6 +23,9 @@ const logos = document.querySelectorAll('.logo');
 
 const section1 = document.querySelector('.section1');
 const section1Copy = section1.querySelectorAll('.section1__copy');
+
+
+
 
 logos.forEach((logo) => {
     gsap.set(logo, {
