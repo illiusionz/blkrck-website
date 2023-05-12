@@ -1,5 +1,4 @@
 // Import plugins
-window.scrollTo(0, 0);
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
@@ -91,3 +90,9 @@ var swiper = new Swiper('.swiper-container', {
     loadingIcon.style.display = "none";
   });
   
+
+//When Pages loads -scroll to top
+window.onbeforeunload = function () {
+    console.log('onbeforeunload');
+    window.scrollTo(0, 0);
+}
